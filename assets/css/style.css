@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "MaterialIcons";
+  src: url(../../font/MaterialIcons-Regular.ttf),
+    url(../../font/MaterialIconsOutlined-Regular.otf);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  padding: 34px 11px 24px;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.content-text {
+  display: flex;
+}
+
+.content-text p {
+  font-size: 12px;
+  font-style: italic;
+  line-height: 15px;
+  margin: 2px 0;
+}
+
+.dots::before {
+  content: url(../img/svg/6dots.svg);
+  margin-right: 12px;
+}
