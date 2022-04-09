@@ -25,13 +25,25 @@ body {
 }
 
 .content-text p {
+  color: #4f4f4f;
   font-size: 12px;
   font-style: italic;
   line-height: 15px;
   margin: 2px 0;
+  width: 320px;
 }
 
 .dots::before {
   content: url(../img/svg/6dots.svg);
   margin-right: 12px;
+}
+
+main {
+  margin-top: 24px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
 }
