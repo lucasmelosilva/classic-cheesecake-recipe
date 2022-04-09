@@ -1,16 +1,20 @@
 @font-face {
   font-family: "MaterialIcons";
-  src: url(../../font/MaterialIcons-Regular.ttf),
-    url(../../font/MaterialIconsOutlined-Regular.otf);
+  src: url(../font/MaterialIcons-Regular.ttf),
+    url(../font/MaterialIconsOutlined-Regular.otf);
 }
 
 body {
+  font-family: "Montserrat", "MaterialIcons", sans-serif;
   font-family: "Montserrat", sans-serif;
+  background-color: #fafafa;
 }
 
 .container {
   width: 100vw;
-  padding: 34px 11px 24px;
+  padding: 20px 11px 24px;
+  display: grid;
+  gap: 20px;
 }
 
 .title {
@@ -29,7 +33,6 @@ body {
   font-size: 12px;
   font-style: italic;
   line-height: 15px;
-  margin: 2px 0;
   width: 320px;
 }
 
@@ -38,12 +41,46 @@ body {
   margin-right: 12px;
 }
 
-main {
-  margin-top: 24px;
-}
-
 .image {
   width: 100%;
   height: auto;
-  margin-bottom: 24px;
+}
+
+.recipe {
+  margin-top: 24px;
+}
+
+.recipe--title {
+  color: #333333;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.recipe--ingredients {
+  margin-top: 15px;
+}
+
+.recipe--ingredients__subtitle {
+  color: #333;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.ingredients--list {
+  margin: 10px 0;
+}
+
+.ingredients--list__item {
+  color: #333333;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+strong {
+  font-weight: 700;
 }
