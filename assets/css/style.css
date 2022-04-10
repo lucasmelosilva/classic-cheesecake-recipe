@@ -1,12 +1,10 @@
 @font-face {
   font-family: "MaterialIcons";
-  src: url(../font/MaterialIcons-Regular.ttf),
-    url(../font/MaterialIconsOutlined-Regular.otf);
+  src: url(../font/MaterialIconsOutlined-Regular.otf);
 }
 
 body {
   font-family: "Montserrat", "MaterialIcons", sans-serif;
-  font-family: "Montserrat", sans-serif;
   background-color: #fafafa;
 }
 
@@ -33,7 +31,11 @@ body {
   font-size: 12px;
   font-style: italic;
   line-height: 15px;
-  width: 320px;
+  width: 300px;
+}
+
+main {
+  width: 100%;
 }
 
 .dots::before {
@@ -42,7 +44,7 @@ body {
 }
 
 .image {
-  width: 100%;
+  width: 95%;
   height: auto;
 }
 
@@ -72,15 +74,36 @@ body {
 }
 
 .ingredients--list {
-  margin: 10px 0;
+  margin: 25px 0;
 }
 
 .ingredients--list__item {
   color: #333333;
   font-size: 14px;
   line-height: 25px;
+  width: 320px;
+  display: flex;
+  margin-top: 12px;
+  /* align-items: center; */
+}
+
+.ingredients--list__item::before {
+  content: "\e835";
+  margin-right: 14px;
+  margin-top: 5px;
+  font-size: 25px;
+  color: #828282;
+}
+
+.checked::before {
+  content: "\e834";
 }
 
 strong {
   font-weight: 700;
+}
+
+.ingredients--list__item-sugestions {
+  font-style: italic;
+  font-weight: 500;
 }
