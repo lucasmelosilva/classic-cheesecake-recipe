@@ -6,6 +6,7 @@
 body {
   font-family: "Montserrat", "MaterialIcons", sans-serif;
   background-color: #fafafa;
+  color: #333333;
 }
 
 .container {
@@ -48,12 +49,51 @@ main {
   height: auto;
 }
 
+.recipe-information--card {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.recipe-information--card__container {
+  display: flex;
+  align-items: center;
+}
+
+.recipe-information--card__text {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.icons::before {
+  content: "\e8ae";
+  font-size: 14px;
+  margin-right: 6px;
+}
+
+.yields {
+  color: #f2994a;
+  grid-column: span 3;
+}
+
+.icon-yields::before {
+  content: "\e556";
+}
+
+.recipe-information--card__subtitle {
+  font-size: 8px;
+  font-weight: 700;
+  color: #bdbdbd;
+  text-transform: uppercase;
+}
+
 .recipe {
   margin-top: 24px;
 }
 
 .recipe--title {
-  color: #333333;
   font-family: "Playfair Display", serif;
   font-size: 18px;
   font-weight: 700;
@@ -65,7 +105,6 @@ main {
 }
 
 .recipe--ingredients__subtitle {
-  color: #333;
   font-family: "Playfair Display", serif;
   font-size: 16px;
   font-style: italic;
@@ -78,7 +117,6 @@ main {
 }
 
 .ingredients--list__item {
-  color: #333333;
   font-size: 14px;
   line-height: 25px;
   width: 320px;
@@ -129,7 +167,6 @@ strong {
 }
 
 .recipe--instructions__text-content {
-  color: #333333;
   font-size: 16px;
   line-height: 20px;
   width: 300px;
