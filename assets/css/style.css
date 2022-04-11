@@ -134,3 +134,19 @@ strong {
   line-height: 20px;
   width: 300px;
 }
+
+.recipe--source {
+  margin-top: 25px;
+  color: #bdbdbd;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+footer {
+  color: #828282;
+  margin: 55px auto 15px;
+  font-family: "Montserrat";
+  font-size: 14px;
+}
