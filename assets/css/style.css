@@ -104,7 +104,7 @@ main {
   margin-top: 15px;
 }
 
-.recipe--ingredients__subtitle {
+.recipe--subtitle {
   font-family: "Playfair Display", serif;
   font-size: 16px;
   font-style: italic;
@@ -186,4 +186,96 @@ footer {
   margin: 55px auto 15px;
   font-family: "Montserrat";
   font-size: 14px;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 950px;
+    margin: auto;
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .text-content {
+    font-size: 14px;
+    line-height: 17px;
+    width: 590px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .image {
+    grid-column: span 2;
+    margin-bottom: 20px;
+  }
+
+  .recipe-information--card {
+    width: 218px;
+    height: 364px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    grid-column: 2 / 3;
+    justify-self: end;
+  }
+
+  .recipe-information--card__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .icons::before {
+    font-size: 20px;
+    margin-right: 12px;
+  }
+
+  .recipe-information--card__subtitle {
+    font-size: 10px;
+  }
+
+  .recipe {
+    grid-row: 2 / 3;
+  }
+
+  .recipe--title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .recipe--subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .ingredients--list__item {
+    font-size: 16px;
+    line-height: 25px;
+    width: auto;
+  }
+
+  .recipe--instructions {
+    margin-top: 40px;
+  }
+
+  .recipe--instructions__text-content {
+    font-size: 16px;
+    line-height: 20px;
+    width: 500px;
+  }
+
+  .recipe--source {
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 60px;
+  }
 }
